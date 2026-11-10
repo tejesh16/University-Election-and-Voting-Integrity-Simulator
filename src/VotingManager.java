@@ -12,21 +12,21 @@ public class VotingManager {
         System.out.println("    REGISTERED CANDIDATES     ");
         System.out.println("============================");
         for (Candidate c : electio.getCandidates().values()) {
-            System.out.println("ID: " + c.getCandidateId() + " | Name: " + c.getName());
+            System.out.println("ID: " + c.getId() + " | Name: " + c.getName());
         }
         System.out.println("============================");
     }
 
-    public void castVote(Scanner, scanner) {
+    public void castVote(Scanner scanner) {
         if (election.isElectionClosed()) {
             System.out.println("Error : The election is closed. No more votes can be cast.");
             return;
         }
 
         System.out.print("Enter your voter ID(1 to 100): ");
-        string voterID = scanner.nextLine().trim();
+        String voterID = scanner.nextLine().trim();
 
-        Voter voter = election.getVoters().get(voterId);
+        Voter voter = election.getVoters().get(voterID);
         if (voter == null) {
             System.out.println("Error: Invalid Voter ID. You are not on the eligible voter list.");
             return;

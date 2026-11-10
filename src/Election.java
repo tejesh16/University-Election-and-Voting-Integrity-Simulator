@@ -28,7 +28,7 @@ public class Election {
         return candidates;
     }
 
-    public Map<String, Voters> getVoters() {
+    public Map<String, Voter> getVoters() {
         return voters;
     }
 
@@ -37,6 +37,6 @@ public class Election {
     }
 
     public void closeElection() {
-        ElectionClosed = true;
+        isElectionClosed = true;
     }
 }
