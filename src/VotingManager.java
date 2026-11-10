@@ -11,7 +11,7 @@ public class VotingManager {
         System.out.println("\n============================");
         System.out.println("    REGISTERED CANDIDATES     ");
         System.out.println("============================");
-        for (Candidate c : electio.getCandidates().values()) {
+        for (Candidate c : election.getCandidates().values()) {
             System.out.println("ID: " + c.getId() + " | Name: " + c.getName());
         }
         System.out.println("============================");
