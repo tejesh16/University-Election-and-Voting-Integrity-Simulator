@@ -1,15 +1,15 @@
 public class Voter {
-    private int id;
+    private String id;
     private String name;
     private boolean voted;
 
-    public Voter(int id, String name) {
+    public Voter(String id, String name) {
         this.id = id;
         this.name = name;
         this.voted = false;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 

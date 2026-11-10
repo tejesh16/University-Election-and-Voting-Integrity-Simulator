@@ -1,15 +1,15 @@
 public class Candidate {
-    private int id;
+    private String id;
     private String name;
     private int votes;
 
-    public Candidate(int id, String name) {
+    public Candidate(String id, String name) {
         this.id = id;
         this.name = name;
         this.votes = 0;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
