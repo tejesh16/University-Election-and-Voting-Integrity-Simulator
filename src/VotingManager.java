@@ -33,7 +33,7 @@ public class VotingManager {
         }
 
         if (voter.hasVoted()) {
-            System.out.println("Error: Duplicate vote attempt detected! Voter ID " + voterId + " has already voted.");
+            System.out.println("Error: Duplicate vote attempt detected! Voter ID " + voterID + " has already voted.");
             return;
         }
 
