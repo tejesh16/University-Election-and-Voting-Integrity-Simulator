@@ -1,4 +1,3 @@
-package src;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,7 @@ public class ResultAnalyzer {
         System.out.println("========================================");
         System.out.printf("%-18s %s\n", "Candidate", "Votes");
         for (Candidate c : candidates.values()) {
-            System.out.printf("%-18s %d\n", c.getName(), c.getVoteCount());
+            System.out.printf("%-18s %d\n", c.getName(), c.getVotes());
         }
         System.out.println("----------------------------------------");
         System.out.println("Eligible Voters:   " + eligibleVoters);
@@ -46,11 +45,11 @@ public class ResultAnalyzer {
         List<Candidate> winners = new ArrayList<>();
 
         for (Candidate c : candidates.values()) {
-            if (c.getVoteCount() > maxVotes) {
-                maxVotes = c.getVoteCount();
+            if (c.getvotes() > maxVotes) {
+                maxVotes = c.getVotes();
                 winners.clear();
                 winners.add(c);
-            } else if (c.getVoteCount() == maxVotes && maxVotes > 0) {
+            } else if (c.getVotes() == maxVotes && maxVotes > 0) {
                 winners.add(c);
             }
         }
