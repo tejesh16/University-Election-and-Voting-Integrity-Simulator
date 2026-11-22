@@ -45,7 +45,7 @@ public class ResultAnalyzer {
         List<Candidate> winners = new ArrayList<>();
 
         for (Candidate c : candidates.values()) {
-            if (c.getvotes() > maxVotes) {
+            if (c.getVotes() > maxVotes) {
                 maxVotes = c.getVotes();
                 winners.clear();
                 winners.add(c);
